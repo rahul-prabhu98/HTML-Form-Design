@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SSN Application Form</title>
+
+    <style>
+        .button {
+            background-color: tomato;
+            border: none;
+            color: white;
+            padding: 10px 10px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 20px;
+            margin: 4px 2px;
+            cursor: pointer;
+            min-width: 110px;
+        }
+        .button:hover{
+            background-color: #002A5C;
+        }
+    </style>
+
+</head>
+<div style="max-width: 1000px ; margin: auto;">
+
+    <!–– Header design starts here––>
+    <div>
+        <img src="images/SSALogo.png" alt="Social Security Administration" align="left" style="width:100px;height:100px;">
+        <h1 style="font-size:35px; color: #002A5C; background-color:#ff6347;"><Strong>&nbsp &nbsp SOCIAL SECURITY ADMINISTRATION</Strong></h1>
+        <h2 style="font-size:28px; letter-spacing: 5px; color: #002A5C; background-color:#ff6347;"><Strong>&nbsp &nbsp APPLICATION FOR A SOCIAL SECURITY CARD</Strong></h2>
+    </div>
+    <!–– Header design ends here––>
+    <hr style="border-top: 5px dotted #002A5C;">
+
+    <form action="/action_page.php">
+    <fieldset style="border:2.5px dashed tomato; color: #002A5C;"><legend style = "font-size:25px; color: #002A5C;" ><b>&nbsp; 1. Name &nbsp;</b></legend>
+        <ruby>
+            To be shown on card <rt align = "left" style="font-size:20px; color: #002A5C;"><b>Name</b></rt>
+        </ruby>
+        &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
+        <ruby>
+            <input name="firstname" type="text"><rt align = "left" style="font-size:20px; color: #002A5C;"> First Name: </rt>
+        </ruby>
+        &nbsp; &nbsp;&nbsp; &nbsp;
+        <ruby>
+            <input name="middlename" type="text"><rt align = "left" style="font-size:20px; color: #002A5C;"> Full Middle Name: </rt>
+        </ruby>
+        &nbsp; &nbsp;&nbsp; &nbsp;
+        <ruby>
+            <input name="lastname" type="text"><rt align = "left" style="font-size:20px; color: #002A5C;"> Last: </rt>
+        </ruby>
+        <br>
+        <br>
+
+        <ruby>
+            IF OTHER THAN ABOVE <rt align = "left" style="font-size:15px; color: #002A5C;"><b>FULL NAME AT BIRTH </b></rt>
+        </ruby>
+        &nbsp; &nbsp;&nbsp;
+        <ruby>
+            <input name="firstname1" type="text"><rt align = "left" style="font-size:20px; color: #002A5C;"> First Name: </rt>
+        </ruby>
+        &nbsp; &nbsp;&nbsp; &nbsp;
+        <ruby>
+            <input name="middlename1" type="text"><rt align = "left" style="font-size:20px; color: #002A5C;"> Full Middle Name: </rt>
+        </ruby>
+        &nbsp; &nbsp;&nbsp;&nbsp;
+        <ruby>
+            <input name="lastname1" type="text"><rt align = "left" style="font-size:20px; color: #002A5C;"> Last: </rt>
+        </ruby>
+        <br>
+        <br>
+        <span style="font-size:15px; color: #002A5C;"><b>OTHER NAMES USED</b> </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input name="othername" type="text" size="80">
+    </fieldset>
+<br>
+        <fieldset style="border:2.5px dashed tomato; color: #002A5C;"><legend style = "font-size:25px; color: #002A5C;" ><b>&nbsp; 2. Previously assigned SSN &nbsp;</b></legend>
+            Social Security number previously assigned to the person
+            listed in item 1:
+            <input name="ssn1" type="text" size="1" maxlength="3" pattern="[0-7]{1} *[0-9]{1} *[0-9]{1}" title="Kindly enter valid SSN">
+            <span style ="font-size:20px; color: tomato;">--</span>
+            <input name="ssn1" type="text" size="1" maxlength="2">
+            <span style ="font-size:20px; color: tomato;">--</span>
+            <input name="ssn1" type="text" size="1" maxlength="4">
+        </fieldset>
+        <br>
+        <fieldset style="border:2.5px dashed tomato; color: #002A5C;"><legend style = "font-size:25px; color: #002A5C;" ><b>&nbsp; 3. Place of Birth &nbsp;</b></legend>
+            <ruby>
+                ABBREVIATE<rt align = "left" style="font-size:15px; color: #002A5C;"><b>DO NOT</b></rt>
+            </ruby>
+            &nbsp; &nbsp;&nbsp; &nbsp;
+            <ruby>
+                <input name="BirthCity" type="text"><rt align = "left" style="font-size:20px; color: #002A5C;"> City </rt>
+            </ruby>
+            &nbsp; &nbsp;&nbsp; &nbsp;
+            <ruby>
+                <input name="stateCountry" type="text" size="50"><rt align = "left" style="font-size:20px; color: #002A5C;"> State or Foreign Country </rt>
+            </ruby>
+        </fieldset>
+        <br>
+        <fieldset style="border:2.5px dashed tomato; color: #002A5C;"><legend style = "font-size:25px; color: #002A5C;" ><b>&nbsp; 4. Date of Birth &nbsp;</b></legend>
+            <input type="date" name="birthdate">
+        </fieldset>
+<br>
+        <fieldset style="border:2.5px dashed tomato; color: #002A5C;"><legend style = "font-size:25px; color: #002A5C;" ><b>&nbsp; 5. CITIZENSHIP &nbsp;</b></legend>
+            <span>Check one</span>  &nbsp; &nbsp;&nbsp; &nbsp;
+            <input type="radio" name="citizenship" value="USCitizen"> U.S. Citizen &nbsp; &nbsp;&nbsp;
+            <input type="radio" name="citizenship" value="lglAlienAllowed"> Legal Alien allowed to work &nbsp; &nbsp;&nbsp;
+            <input type="radio" name="citizenship" value="lglAlienNotAllowed"> Legal Alien not allowed to work &nbsp; &nbsp;&nbsp;
+            <input type="radio" name="citizenship" value="others"> Others
+        </fieldset>
+        <br>
+        <fieldset style="border:2.5px dashed tomato; color: #002A5C;"><legend style = "font-size:25px; color: #002A5C;" ><b>&nbsp; 6. ETHNICITY &nbsp;</b></legend>
+            <ruby>
+                (Your response is Voluntary)<rt align = "left" style="font-size:15px; color: #002A5C;"><b>Are you Hispanic or Latino?</b></rt>
+            </ruby>
+            &nbsp; &nbsp;&nbsp; &nbsp;
+            <input type="radio" name="citizenship" value="YesHispLati"> YES &nbsp; &nbsp;&nbsp; &nbsp;
+            <input type="radio" name="citizenship" value="NoHispLati"> NO
+
+        </fieldset>
+        <br>
+        <fieldset style="border:2.5px dashed tomato; color: #002A5C;"><legend style = "font-size:25px; color: #002A5C;" ><b>&nbsp; 7. RACE &nbsp;</b></legend>
+            <div><ruby>
+                (Your response is Voluntary)<rt align = "left" style="font-size:15px; color: #002A5C;"><b>Select One or More </b></rt>
+            </ruby></div>
+            &nbsp; &nbsp;&nbsp; &nbsp;
+            <input type="checkbox" name="race" value="nativeHawaiian"> Native Hawaiian
+            <input type="checkbox" name="race" value="alaskaNative"> Alaska Native
+            <input type="checkbox" name="race" value="asian"> Asian
+            <input type="checkbox" name="race" value="americanIndian"> American Indian
+            <input type="checkbox" name="race" value="blackAfrican"> Black / African American
+            <input type="checkbox" name="race" value="pacificIslander"> Other Pacific Islander
+            <input type="checkbox" name="race" value="white"> White
+
+        </fieldset>
+
+<input type="submit">
+    </form>
+</div>
+</body>
+</html>
