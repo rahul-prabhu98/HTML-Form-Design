@@ -1,5 +1,3 @@
-Author: Darshan Ashwin Dedhia
-NUID: 001054816
-INFO 6105 Assignment 2
+Author: Rahul Prabhu
 ----------------------------------
-Assignment Desc:SSN Application form created for users.
+Description:SSN Application form created for users.
