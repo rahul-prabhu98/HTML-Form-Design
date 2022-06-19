@@ -1,4 +1,8 @@
 # Ignore all text files
 *.txt
+
 #Ignore PDF Question File
 Application for Social Security Card.pdf
+
+# Default ignored files
+/.idea
