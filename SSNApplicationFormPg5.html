@@ -38,6 +38,7 @@ needed action. Is it that it might behave differnetly on differnet browser -->
     <hr style="border-top: 5px dotted #002A5C;">
     <!--Form startes here-->
     <form action="SSNApplicationFormPg6.html">
+    <!--Section 1: Name Details code-->
     <fieldset style="border:2.5px dashed tomato; color: #002A5C;"><legend style = "font-size:25px; color: #002A5C;" ><b>&nbsp; 1. Name &nbsp;</b></legend>
         <ruby>
             To be shown on card <rt align = "left" style="font-size:20px; color: #002A5C;"><b>Name</b></rt>
@@ -77,6 +78,7 @@ needed action. Is it that it might behave differnetly on differnet browser -->
         <span style="font-size:15px; color: #002A5C;"><b>OTHER NAMES USED</b> </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input name="othername" type="text" size="80">
     </fieldset>
 <br>
+        <!--Section 2  : Previously assigned SSN code-->
         <fieldset style="border:2.5px dashed tomato; color: #002A5C;"><legend style = "font-size:25px; color: #002A5C;" ><b>&nbsp; 2. Previously assigned SSN &nbsp;</b></legend>
             Social Security number previously assigned to the person
             listed in item 1:
@@ -87,6 +89,7 @@ needed action. Is it that it might behave differnetly on differnet browser -->
             <input name="ssn1" type="text" size="1" maxlength="4">
         </fieldset>
         <br>
+        <!--Section 3: Place of BirthDetails code-->
         <fieldset style="border:2.5px dashed tomato; color: #002A5C;"><legend style = "font-size:25px; color: #002A5C;" ><b>&nbsp; 3. Place of Birth &nbsp;</b></legend>
             <ruby>
                 ABBREVIATE<rt align="left" style="font-size:15px; color: #002A5C;"><b>DO NOT</b></rt>
@@ -101,10 +104,12 @@ needed action. Is it that it might behave differnetly on differnet browser -->
             </ruby>
         </fieldset>
         <br>
+        <!--Section 4: Date of Birth code-->
         <fieldset style="border:2.5px dashed tomato; color: #002A5C;"><legend style = "font-size:25px; color: #002A5C;" ><b>&nbsp;<label for = "birthdate"> 4. Date of Birth</label> &nbsp;</b></legend>
             <input id = "birthdate" type="date" name="birthdate" required>
         </fieldset>
 <br>
+        <!--Section 5: Citizenship Details code-->
         <fieldset style="border:2.5px dashed tomato; color: #002A5C;"><legend style = "font-size:25px; color: #002A5C;" ><b>&nbsp; 5. CITIZENSHIP &nbsp;</b></legend>
             <span>Check one</span>  &nbsp; &nbsp;&nbsp; &nbsp;
             <input id ="citizenship1" type="radio" name="citizenship" value="USCitizen" required> <label for = "citizenship1">U.S. Citizen</label> &nbsp; &nbsp;&nbsp;
@@ -113,6 +118,7 @@ needed action. Is it that it might behave differnetly on differnet browser -->
             <input id = "citizenship4" type="radio" name="citizenship" value="others"> <label for = "citizenship4">Others</label>
         </fieldset>
         <br>
+        <!--Section 6: Ethinicity Details code-->
         <fieldset style="border:2.5px dashed tomato; color: #002A5C;"><legend style = "font-size:25px; color: #002A5C;" ><b>&nbsp; 6. ETHNICITY &nbsp;</b></legend>
             <ruby>
                 (Your response is Voluntary)<rt align="left" style="font-size:15px; color: #002A5C;"><b>Are you Hispanic or Latino?</b></rt>
@@ -123,6 +129,7 @@ needed action. Is it that it might behave differnetly on differnet browser -->
 
         </fieldset>
         <br>
+        <!--Section 7: Race options code-->
         <fieldset style="border:2.5px dashed tomato; color: #002A5C;"><legend style = "font-size:25px; color: #002A5C;" ><b>&nbsp; 7. RACE &nbsp;</b></legend>
             <div><ruby>
                 (Your response is Voluntary)<rt align="left" style="font-size:15px; color: #002A5C;"><b>Select One or More </b></rt>
@@ -138,11 +145,13 @@ needed action. Is it that it might behave differnetly on differnet browser -->
 
         </fieldset>
         <br>
+        <!--Section 8: Sex details code-->
         <fieldset style="border:2.5px dashed tomato; color: #002A5C;"><legend style = "font-size:25px; color: #002A5C;" ><b>&nbsp; 8. SEX &nbsp;</b></legend>
             <input id = "sex1" type="radio" name="sex" value="male" required> <label for = "sex1">Male &nbsp;</label> &nbsp;&nbsp; &nbsp;
             <input id = "sex2" type="radio" name="sex" value="female"> <label for = "sex2">Female</label>
         </fieldset>
         <br>
+        <!--Section 9: Code to collect Parent / Mother's details-->
         <fieldset style="border:2.5px dashed tomato; color: #002A5C;"><legend style = "font-size:25px; color: #002A5C;" ><b>&nbsp; 9. Parents/Mother Details &nbsp;</b></legend>
             <ruby>
                 <b>Name at birth</b><rt align="left" style="font-size:15px; color: #002A5C;"><b>Parent/ Mother's </b></rt>
@@ -174,6 +183,7 @@ needed action. Is it that it might behave differnetly on differnet browser -->
             <input name = "motherssnenable" type="checkbox">Unknown
         </fieldset>
         <br>
+        <!--Section 10: Code to collect Parent/Father's detail-->
         <fieldset style="border:2.5px dashed tomato; color: #002A5C;"><legend style = "font-size:25px; color: #002A5C;" ><b>&nbsp; 10. Parents/Father Details &nbsp;</b></legend>
             <ruby>
                 <b>Name</b><rt align="left" style="font-size:15px; color: #002A5C;"><b>Parent/ Father's </b></rt>
@@ -205,15 +215,17 @@ needed action. Is it that it might behave differnetly on differnet browser -->
             <input name = "motherssnenable" type="checkbox">Unknown
         </fieldset>
         <br>
+        <!--Section 11: Previous SSN question-->
         <fieldset style="border:2.5px dashed tomato; color: #002A5C;"><legend style = "font-size:25px; color: #002A5C;" ><b>&nbsp; 11 &nbsp;</b></legend>
             Has the person listed in item 1 or anyone acting on his/her behalf ever filed for or received a Social Security number
             card before?<br>
             <input id = "111" name="11" type="radio" required> <label for = "111">Yes (If "yes" answer questions 12-13)</label> &nbsp;&nbsp;&nbsp;&nbsp;
-            <input id = "112" name="11" type="radio"> <label for = "112">No</fieldset> &nbsp;&nbsp;&nbsp;&nbsp;
+            <input id = "112" name="11" type="radio"> <label for = "112">No</label> &nbsp;&nbsp;&nbsp;&nbsp;
             <input id = "113" name="11" type="radio"> <label for = "113">Don't Know (If "don't know," skip to question 14.)</label> &nbsp;&nbsp;&nbsp;&nbsp;
             <br>
         </fieldset>
         <br>
+        <!--Section 12: Code to work only if section 11 is true. Further validation requires JavaScript-->
         <fieldset style="border:2.5px dashed tomato; color: #002A5C;"><legend style = "font-size:25px; color: #002A5C;" ><b>&nbsp; 12 &nbsp;</b></legend>
             Name shown on the most recent Social Security card issued for the person listed in item 1 <br><br>
             &nbsp; &nbsp;&nbsp; &nbsp;
@@ -230,16 +242,19 @@ needed action. Is it that it might behave differnetly on differnet browser -->
             </ruby>
         </fieldset>
         <br>
+        <!--Section 13: Same as section 12-->
         <fieldset style="border:2.5px dashed tomato; color: #002A5C;"><legend style = "font-size:25px; color: #002A5C;" ><b>&nbsp; 13 &nbsp;</b></legend>
             <label for = "previousdob">Enter any different date of birth if used on an earlier application for a card</label> &nbsp;&nbsp;
             <input id = "previousdob" name="previousdob" type="date">
         </fieldset>
         <br>
+        <!--Section 14: Current date to be taken by user. This can be automated by javascript-->
         <fieldset style="border:2.5px dashed tomato; color: #002A5C;"><legend style = "font-size:25px; color: #002A5C;" ><b>&nbsp; 14 & 15 &nbsp;</b></legend>
             <b><label for = "todaydate">14. TODAY'S DATE:</label></b> &nbsp; &nbsp; <input id = "todaydate" name="todaydate" type="date" required>  &nbsp; &nbsp;&nbsp; &nbsp;
             <b><label for = "phoneno">15. DAYTIME PHONE NUMBER:</label></b> <input id = "phoneno" type="text" name="phoneno" placeholder="xxx-xxx-xxxx" pattern="\d{3}[\-]\d{3}[\-]\d{4}" title="Kindly enter valid number in 123-456-7890 format" required>
         </fieldset>
         <br>
+        <!--Section 16: Code for collecting mailing address details. Placeholders implemented here-->
         <fieldset style="border:2.5px dashed tomato; color: #002A5C;"><legend style = "font-size:25px; color: #002A5C;" ><b>&nbsp; 16 Mailing Address &nbsp;</b></legend>
          <input name="streetaddr" type="text" placeholder="Street Address, Apt. No., PO Box, Rural Route No." required size="50"> &nbsp; &nbsp;&nbsp;
          <input name="city" type="text" placeholder="City" required> &nbsp; &nbsp;&nbsp;
@@ -247,12 +262,14 @@ needed action. Is it that it might behave differnetly on differnet browser -->
          <input name="zipcode" type="text" placeholder="Zipcode" pattern="(\d{5}([\-]\d{4})?)" title="Kindly enter a valid zip code">
         </fieldset>
         <br>
+        <!--Section 17: In place of Signature, digital signature i.e. Full Name is been accepted by the form-->
         <fieldset style="border:2.5px dashed tomato; color: #002A5C;"><legend style = "font-size:25px; color: #002A5C;" ><b>&nbsp; 17 Your Signature &nbsp;</b></legend>
             <b><label for = "agreement">I declare under penalty of perjury that I have examined all the information on this form, and on any accompanying statements or forms,
                 and it is true and correct to the best to my knowledge.</label></b> &nbsp;&nbsp;&nbsp;
             <input id = "agreement" type="text"  placeholder="Full Name as Digital Signature" size="60" required>
         </fieldset>
         <br>
+        <!--Section 18: Applicant relationship declaration-->
         <fieldset style="border:2.5px dashed tomato; color: #002A5C;"><legend style = "font-size:25px; color: #002A5C;" ><b>&nbsp; 18 YOUR RELATIONSHIP TO THE PERSON IN ITEM 1 IS: &nbsp;</b></legend>
             <input id = "relationship1" name="relationship" type="radio" value="self" required> <label for = "relationship1">Self</label> &nbsp; &nbsp; &nbsp;
             <input id = "relationship2" name="relationship" type="radio" value="Natural Or Adoptive Parent"> <label for = "relationship2">Natural Or Adoptive Parent</label> &nbsp; &nbsp; &nbsp;
